@@ -1,0 +1,105 @@
+<div class="container p-4">
+  <div class="row">
+    <div class="col-md-4 mx-auto">
+      <div class="card text-center">
+        <div class="card-header">
+          <h3>SignUp</h3>
+        </div>
+        
+        <div class="card-body">
+          <form action="/signup" method="POST">
+            <div class="form-group">
+              <input type="type" name="nombre" placeholder="Full Name" class="form-control" autofocus>
+            </div>
+            <div class="form-group">
+              <input type="text" name="nombre_usuario" placeholder="Username" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" name="clave" placeholder="Password" class="form-control">
+            </div>
+            <div class="form-group">
+              <button class="btn btn-success btn-block">
+                SingIn
+              </button>
+            </div>
+          </form>
+        </div>
+         
+
+
+
+{{! 
+<section class="col-md-6">
+                <h1>Sign Up</h1>
+                <p>It’s quick and easy.</p>
+                <div class="row" id="formulario">
+                    <div class="col-lg-6 col-12">
+                        <input type="hidden" id="key">
+                        <input id="first-name" class="form-control" type="text" placeholder="First name">
+                        <div class="valid-feedback">Ok</div>
+                        <div class="invalid-feedback">First name is required</div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <input id="last-name" class="form-control" type="text" placeholder="Last name">
+                        <div class="valid-feedback">Ok</div>
+                        <div class="invalid-feedback">Last name is required</div>
+                    </div>
+                    <div class="col-12">
+                        <input onkeyup="validarCorreo(this)" id="email" class="form-control" type="text" placeholder="Mobile number or email">
+                        <div class="valid-feedback">Ok</div>
+                        <div class="invalid-feedback">Invalid Email</div>
+                    </div>
+                    <div class="col-12">
+                        <input id="password" class="form-control" type="password" placeholder="Password">
+                        <div class="valid-feedback">Ok</div>
+                        <div class="invalid-feedback">Password is required</div>
+                    </div>
+                    <div class="col-12">Birthday</div>
+                    <div class="col-lg-4 col-12">
+                        <select id="month" class="form-control"><option value="">Mes</option></select>
+                        <div class="valid-feedback">Ok</div>
+                        <div class="invalid-feedback">Month is required</div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <select id="day" class="form-control"><option value="">Día</option></select>
+                        <div class="valid-feedback">Ok</div>
+                        <div class="invalid-feedback">Day is required</div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <select id="year" class="form-control"><option value="">Año</option></select>
+                        <div class="valid-feedback">Ok</div>
+                        <div class="invalid-feedback">Year is required</div>
+                    </div>
+                    <div class="col-12">
+                        Gender<br>
+                        <label><input name="gender" type="radio" value="F">Female</label>
+                        <label><input name="gender" type="radio" value="M">Male</label>
+                        <label><input name="gender" type="radio" value="X">Custom</label>
+                    </div>
+                    <div class="col-12" >
+                        <div id="contenido-terminos">
+                            By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Data Policy</a> and <a href="#">Cookies Policy</a>. You may receive SMS Notifications from us and can opt out any time.
+                        </div>
+                        <button onclick="registrarUsuario()" type="button"  id="boton-sign-in" class="btn btn-success">Sign In</button>
+                        <button style="display:none" onclick="actualizarUsuario()" type="button"  id="boton-update" class="btn btn-primary">Update</button>
+                        <button style="display:none" onclick="limpiar()" type="button"  id="boton-clear" class="btn btn-danger">Clear</button>
+                        <div id="resultado" class="alert alert-success" role="alert" style="display:none;">
+                            Registro guardado
+                        </div>
+                    </div>
+                </div>
+            </section>
+ }}
+         
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+     <script src="../../public/js/jquery-3.4.1.min.js"></script>
+    <script src="../../public/js/popper.min.js"></script>
+    <script src="../../public/js/bootstrap.min.js"></script>
+    <script src="../../public/js/controlador.js"></script>
