@@ -1,11 +1,12 @@
 
 /*
 const  app = require('./app'),
-       mysql = require('mysql'),
+       
        port = process.env.PORT || 3001,
        {database} = require('./config'),
        pool = mysql.createPool(database);
 */
+//const mysql = require('mysql');
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -15,7 +16,7 @@ console.log('Server is in port', app.get('port'));
       
   /* 
   
-  pool.getConnection((error) =>{
+  pool.((error) =>{
     if(error) {
      return console.log(`Error al conectar a la base de datos: ${error}`)
     }
